@@ -10,8 +10,11 @@
 <meta content="Guía de Topografía en Colombia 2026, CPNT, IGAC y MAGNA-SIRGAS" property="og:title"/>
 <meta content="Guía completa de topografía en Colombia: cuándo es obligatorio el topógrafo, qué exige el IGAC y las curadurías urbanas, y cómo verificar la matrícula CPNT." property="og:description"/>
 <meta content="article" property="og:type"/>
+<meta content="https://topografocolombia.co/og.jpg" property="og:image"/>
+<meta content="es_CO" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://topografocolombia.co/guia-topografia" property="og:url"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Guía de Topografía en Colombia 2026","description":"Guía completa sobre levantamientos topográficos en Colombia: cuándo son obligatorios, tipos, legislación (Ley 388/1997, Ley 70/1979, Decreto 690/1981, Decreto 1077/2015) y cómo verificar matrícula CPNT.","datePublished":"2026-06-01","dateModified":"2026-06-27","publisher":{"@type":"Organization","name":"Topógrafo Colombia","url":"https://topografocolombia.co"},"mainEntityOfPage":"https://topografocolombia.co/guia-topografia"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Guía de Topografía en Colombia 2026","description":"Guía completa sobre levantamientos topográficos en Colombia: cuándo son obligatorios, tipos, legislación (Ley 388/1997, Ley 70/1979, Decreto 690/1981, Decreto 1077/2015) y cómo verificar matrícula CPNT.","datePublished":"2026-06-01","dateModified":"2026-06-27","publisher":{"@type":"Organization","name":"Topógrafo Colombia","url":"https://topografocolombia.co"},"mainEntityOfPage":"https://topografocolombia.co/guia-topografia","author":{"@type":"Organization","name":"Topógrafo Colombia","url":"https://topografocolombia.co"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuándo es obligatorio el topógrafo en Colombia?","acceptedAnswer":{"@type":"Answer","text":"El topógrafo es obligatorio para: licencia de construcción ante la curaduría urbana (Decreto 1077/2015), corrección de discrepancias catastrales ante el IGAC, subdivisiones de predios, deslindes, replanteo de edificaciones antes de iniciar obras, y escrituración con diferencia de área."}},{"@type":"Question","name":"¿Qué es el CPNT y por qué importa?","acceptedAnswer":{"@type":"Answer","text":"El CPNT (Consejo Profesional Nacional de Topografía) expide la matrícula profesional que habilita al topógrafo para firmar planos con validez ante el IGAC, curadurías urbanas y el Registro de Instrumentos Públicos. Verificable en cpnt.gov.co."}},{"@type":"Question","name":"¿Qué es MAGNA-SIRGAS?","acceptedAnswer":{"@type":"Answer","text":"MAGNA-SIRGAS (Marco Geocéntrico Nacional de Referencia) es el sistema oficial de referencia geodésica de Colombia desde la Resolución IGAC 068 de 2005. Todos los levantamientos presentados ante el IGAC y curadurías deben estar en MAGNA-SIRGAS."}},{"@type":"Question","name":"¿Qué diferencia hay entre IGAC y la UAECD (Bogotá)?","acceptedAnswer":{"@type":"Answer","text":"El IGAC administra el catastro en todos los departamentos del país. Bogotá D.C. tiene catastro propio, administrado por la UAECD (Unidad Administrativa Especial de Catastro Distrital). Medellín también tiene catastro propio."}}]}</script>
 <link href="../styles-topografo.css" rel="stylesheet"/>
 <style>
@@ -63,12 +66,11 @@
   .toc{position:sticky;top:80px}
   .toc .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
   .toc ol{list-style:none;counter-reset:t;display:flex;flex-direction:column}
-  .toc ol a{counter-increment:t;display:flex;gap:11px;align-items:baseline;font-size:13.5px;color:var(--muted);padding:8px 0;border-top:1px solid var(--line);transition:.15s;line-height:1.4}
-  .toc ol a:first-child{border-top:0}
-  .toc ol a::before{content:counter(t,decimal-leading-zero);font-family:var(--mono);font-size:11px;color:var(--line-2);flex:0 0 auto}
-  .toc ol a:hover{color:var(--ink)}
-  .toc ol a.on{color:var(--brand-deep);font-weight:600}
-  .toc ol a.on::before{color:var(--brand)}
+  .toc ol li{counter-increment:t;border-top:1px solid var(--line)}.toc ol li:first-child{border-top:0}.toc ol li a{display:flex;gap:11px;align-items:baseline;font-size:13.5px;color:var(--muted);padding:8px 0;transition:.15s;line-height:1.4;width:100%}
+  .toc ol li::before{content:counter(t,decimal-leading-zero);font-family:var(--mono);font-size:11px;color:var(--line-2);flex:0 0 auto}
+  .toc ol li a:hover{color:var(--ink)}
+  .toc ol li a.on{color:var(--brand-deep);font-weight:600}
+  .toc ol li a.on::before{color:var(--brand)}
   .toc .cta{margin-top:22px;background:var(--panel);border:1px solid var(--line-2);border-radius:12px;padding:18px}
   .toc .cta h4{font-family:var(--serif);font-size:16px;font-weight:700;margin-bottom:6px}
   .toc .cta p{font-size:12.5px;color:var(--ink-2);margin-bottom:12px;line-height:1.5}
@@ -85,7 +87,7 @@
 <header><div class="wrap navrow"><a class="brand" href="/"><svg aria-hidden="true" height="30" viewBox="0 0 28 38" width="22"><path d="M14,1 C7,1 1,7 1,14 C1,23 14,37 14,37 C14,37 27,23 27,14 C27,7 21,1 14,1 Z" fill="#0d9488"></path><circle cx="14" cy="14" fill="none" r="6.5" stroke="#fff" stroke-width="1.6"></circle><circle cx="16" cy="12" fill="#fff" r="3"></circle></svg><span>Topógrafo <span class="b2">Colombia</span></span></a><nav class="main" id="main-nav"><a href="/#como-funciona">PROCESO</a><a href="/#servicios">SERVICIOS</a><a href="/#legislacion">MARCO LEGAL</a><a href="/#departamentos">DEPARTAMENTOS</a><a href="/#faq">FAQ</a><a href="/blog">BLOG</a></nav><a class="btn btn-primary nav-cta" href="/#contacto">Pedir Cotización</a><button class="nav-toggle" id="nav-toggle" aria-label="Menú" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2" rx="1" fill="currentColor"/><rect y="10" width="22" height="2" rx="1" fill="currentColor"/><rect y="16" width="22" height="2" rx="1" fill="currentColor"/></svg></button></div></header>
 <script>(function(){var btn=document.getElementById('nav-toggle');var nav=document.getElementById('main-nav');if(!btn||!nav)return;btn.addEventListener('click',function(){var open=nav.classList.toggle('open');btn.innerHTML=open?'<svg width="22" height="22" viewBox="0 0 22 22" fill="none"><line x1="3" y1="3" x2="19" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="19" y1="3" x2="3" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>':'<svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2" rx="1" fill="currentColor"/><rect y="10" width="22" height="2" rx="1" fill="currentColor"/><rect y="16" width="22" height="2" rx="1" fill="currentColor"/></svg>';btn.setAttribute('aria-expanded',open);});nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.innerHTML='<svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2" rx="1" fill="currentColor"/><rect y="10" width="22" height="2" rx="1" fill="currentColor"/><rect y="16" width="22" height="2" rx="1" fill="currentColor"/></svg>';});});})();</script>
 
-<form name="pedido-guia-co" data-netlify="true" method="POST" action="/gracias/" style="display:none">
+<form name="pedido-guia-co" data-netlify="true" method="POST" action="/gracias/?ok=1" style="display:none">
   <input name="form-name" type="hidden" value="pedido-guia-co"/>
   <input name="nombre" type="text"/><input name="telefono" type="tel"/><input name="email" type="email"/><select name="departamento"></select><select name="tipo"></select>
 </form>
@@ -186,10 +188,10 @@
 
         <h2 id="s7"><span class="hx">07</span>Cómo funciona el proceso</h2>
         <ul class="step-list">
-          <li><div class="num">01</div><div><strong>Solicitud de cotización.</strong> Rellena el formulario indicando la superficie aproximada, el departamento y la finalidad del levantamiento. Respuesta en menos de 24h.</div></li>
+          <li><div class="num">01</div><div><strong>Solicitud de cotización.</strong> Complete el formulario indicando la superficie aproximada, el departamento y la finalidad del levantamiento. Respuesta en menos de 24h.</div></li>
           <li><div class="num">02</div><div><strong>Visita al terreno.</strong> El topógrafo con matrícula CPNT realiza el trabajo de campo con GPS RTK y/o estación total. El plazo de visita depende de la disponibilidad y la urgencia.</div></li>
           <li><div class="num">03</div><div><strong>Procesamiento en gabinete.</strong> Los datos de campo se procesan en AutoCAD. Se añaden coordenadas MAGNA-SIRGAS y se redacta la memoria técnica del levantamiento.</div></li>
-          <li><div class="num">04</div><div><strong>Entrega del plano.</strong> Recibes el plano en DWG y PDF, firmado por el topógrafo con matrícula CPNT, listo para presentar ante la curaduría urbana, el IGAC o el notario.</div></li>
+          <li><div class="num">04</div><div><strong>Entrega del plano.</strong> Recibirá los planos en DWG y PDF, firmado por el topógrafo con matrícula CPNT, listo para presentar ante la curaduría urbana, el IGAC o el notario.</div></li>
           <li><div class="num">05</div><div><strong>Trámite (si aplica).</strong> Para actualizaciones catastrales y subdivisiones, el topógrafo puede orientarte sobre la documentación adicional requerida ante el IGAC o la curaduría.</div></li>
         </ul>
 
@@ -206,14 +208,15 @@
       <aside class="toc" id="contacto">
         <div class="lbl">En esta guía</div>
         <ol id="toc-list">
-          <a href="#s1">¿Qué es un levantamiento topográfico?</a>
-          <a href="#s2">¿Cuándo es obligatorio en Colombia?</a>
-          <a href="#s3">Tipos de levantamiento</a>
-          <a href="#s4">El CPNT y la matrícula profesional</a>
-          <a href="#s5">IGAC, UAECD y el catastro</a>
-          <a href="#s6">MAGNA-SIRGAS, el sistema oficial</a>
-          <a href="#s7">Cómo funciona el proceso</a>
-          <a href="#s8">Preguntas frecuentes</a>
+          <li><a href="#s1">¿Qué es un levantamiento topográfico?</a></li>
+          <li><a href="#s2">¿Cuándo es obligatorio en Colombia?</a></li>
+          <li><a href="#s3">Tipos de levantamiento</a></li>
+          <li><a href="#s4">El CPNT y la matrícula profesional</a></li>
+          <li><a href="#s5">IGAC, UAECD y el catastro</a></li>
+          <li><a href="#s6">MAGNA-SIRGAS, el sistema oficial</a></li>
+          <li><a href="#s7">Cómo funciona el proceso</a></li>
+          <li><a href="#s8">Preguntas frecuentes</a></li>
+        
         </ol>
         <div class="cta">
           <h4>¿Necesitas un topógrafo?</h4>
@@ -233,7 +236,7 @@
   </section>
 </main>
 
-<footer><div class="wrap"><div class="fg"><div><a class="brand" href="/" style="margin-bottom:14px;display:inline-flex;align-items:center;gap:10px;font-size:18px"><svg aria-hidden="true" height="30" viewBox="0 0 28 38" width="22"><path d="M14,1 C7,1 1,7 1,14 C1,23 14,37 14,37 C14,37 27,23 27,14 C27,7 21,1 14,1 Z" fill="#0d9488"></path><circle cx="14" cy="14" fill="none" r="6.5" stroke="#fff" stroke-width="1.6"></circle><circle cx="16" cy="12" fill="#fff" r="3"></circle></svg><span style="color:#fff">Topógrafo <span style="color:#14b8be">Colombia</span></span></a><p style="max-width:32em">Directorio nacional de topógrafos con matrícula profesional CPNT. Cobertura en los 33 departamentos.</p></div><div><h4>Servicios</h4><a href="/levantamiento-topografico">Levantamiento Topográfico</a><a href="/deslinde-de-predios">Deslinde de Predios</a><a href="/subdivision-de-predios">Subdivisión de Predios</a><a href="/replanteo-topografico">Replanteo Topográfico</a><a href="/topografia-con-dron">Topografía con Dron</a></div><div><h4>Marco Legal</h4><a href="/guia-topografia/">CPNT · Ley 70/1979</a><a href="/guia-topografia/">IGAC · MAGNA-SIRGAS</a><a href="/guia-topografia/">Ley 388 de 1997</a><a href="/#departamentos">Todos los departamentos</a></div></div><div class="copy">© 2026 topografocolombia.co — Todos los derechos reservados.</div></div></footer>
+<footer><div class="wrap"><div class="fg"><div><a class="brand" href="/" style="margin-bottom:14px;display:inline-flex;align-items:center;gap:10px;font-size:18px"><svg aria-hidden="true" height="30" viewBox="0 0 28 38" width="22"><path d="M14,1 C7,1 1,7 1,14 C1,23 14,37 14,37 C14,37 27,23 27,14 C27,7 21,1 14,1 Z" fill="#0d9488"></path><circle cx="14" cy="14" fill="none" r="6.5" stroke="#fff" stroke-width="1.6"></circle><circle cx="16" cy="12" fill="#fff" r="3"></circle></svg><span style="color:#fff">Topógrafo <span style="color:#14b8be">Colombia</span></span></a><p style="max-width:32em">Directorio nacional de topógrafos con matrícula profesional CPNT. Cobertura en los 33 departamentos.</p></div><div><h4>Servicios</h4><a href="/levantamiento-topografico">Levantamiento Topográfico</a><a href="/deslinde-de-predios">Deslinde de Predios</a><a href="/subdivision-de-predios">Subdivisión de Predios</a><a href="/replanteo-topografico">Replanteo Topográfico</a><a href="/topografia-con-dron">Topografía con Dron</a></div><div><h4>Marco Legal</h4><a href="/guia-topografia">CPNT · Ley 70/1979</a><a href="/guia-topografia">IGAC · MAGNA-SIRGAS</a><a href="/guia-topografia">Ley 388 de 1997</a><a href="/#departamentos">Todos los departamentos</a></div></div><div class="copy">© 2026 topografocolombia.co — Todos los derechos reservados.</div></div></footer>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 <script>(function(){
