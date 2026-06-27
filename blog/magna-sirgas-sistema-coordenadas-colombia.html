@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MAGNA-SIRGAS: Sistema de Coordenadas Oficial de Colombia | IGAC · CTM12</title>
+<meta content="Qué es MAGNA-SIRGAS, por qué reemplazó al Datum Bogotá 1941, cómo funciona en GPS moderno, qué es CTM12 y por qué todos los planos topográficos en Colombia deben usarlo." name="description"/>
+<link href="https://topografocolombia.co/blog/magna-sirgas-sistema-coordenadas-colombia" rel="canonical"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/><link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
+<meta content="index, follow" name="robots"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"MAGNA-SIRGAS: el sistema de coordenadas oficial de Colombia","description":"Qué es MAGNA-SIRGAS, por qué reemplazó al Datum Bogotá 1941 y qué es CTM12.","datePublished":"2026-06-01","author":{"@type":"Organization","name":"Topógrafo Colombia"},"publisher":{"@type":"Organization","name":"Topógrafo Colombia","url":"https://topografocolombia.co"}}</script>
+<link href="../styles-topografo.css" rel="stylesheet"/>
+<style>
+.breadcrumb{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.03em;padding:22px 0 0;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.breadcrumb a:hover{color:var(--brand-deep)}.breadcrumb .sep{color:var(--line-2)}.breadcrumb b{color:var(--ink)}
+.post-hero{padding:52px 0 36px;border-bottom:1px solid var(--line)}
+.post-hero .tag{font-family:var(--mono);font-size:11px;color:var(--brand-deep);text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;display:block}
+.post-hero h1{font-family:var(--serif);font-size:clamp(30px,4.5vw,50px);font-weight:800;line-height:1.1;margin-bottom:12px}
+.post-hero .meta{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.post-body{padding:52px 0;max-width:720px}
+.post-body h2{font-family:var(--serif);font-size:24px;font-weight:700;margin:40px 0 10px}
+.post-body h3{font-family:var(--serif);font-size:19px;font-weight:700;margin:28px 0 8px}
+.post-body p{color:var(--ink-2);line-height:1.72;margin-bottom:16px}
+.post-body ul,.post-body ol{padding-left:20px;color:var(--ink-2);line-height:1.7;margin-bottom:16px}
+.post-body li{margin-bottom:6px}
+.callout{border-radius:10px;padding:16px 20px;margin:18px 0;font-size:14px;line-height:1.6;background:#eef4f3;border:1px solid #c6d4d1;color:var(--ink-2)}
+.callout.amber{background:#fdf7e8;border:1px solid #ecd9a8}
+.post-cta{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:26px;margin-top:44px;text-align:center}
+.post-cta h3{font-family:var(--serif);font-size:20px;margin-bottom:8px}
+.post-cta p{color:var(--ink-2);margin-bottom:18px}
+</style>
+</head>
+<body>
+<header><div class="wrap navrow"><a class="brand" href="/"><svg aria-hidden="true" height="30" viewbox="0 0 28 38" width="22"><path d="M14,1 C7,1 1,7 1,14 C1,23 14,37 14,37 C14,37 27,23 27,14 C27,7 21,1 14,1 Z" fill="#0d9488"></path><circle cx="14" cy="14" fill="none" r="6.5" stroke="#fff" stroke-width="1.6"></circle><circle cx="16" cy="12" fill="#fff" r="3"></circle></svg><span>Topógrafo <span class="b2">Colombia</span></span></a><nav class="main" id="main-nav"><a href="/#como-funciona">PROCESO</a><a href="/#servicios">SERVICIOS</a><a href="/#legislacion">MARCO LEGAL</a><a href="/#departamentos">DEPARTAMENTOS</a><a href="/#faq">FAQ</a><a href="/blog">BLOG</a></nav><a class="btn btn-primary nav-cta" href="/#contacto">Pedir Cotización</a><button class="nav-toggle" id="nav-toggle" aria-label="Menú" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect y="4" width="22" height="2" rx="1" fill="currentColor"/><rect y="10" width="22" height="2" rx="1" fill="currentColor"/><rect y="16" width="22" height="2" rx="1" fill="currentColor"/></svg></button></div></header><script>(function(){var btn=document.getElementById("nav-toggle");var nav=document.getElementById("main-nav");if(!btn||!nav)return;btn.addEventListener("click",function(){var open=nav.classList.toggle("open");btn.setAttribute("aria-expanded",open);});})();</script>
+<main>
+<div class="wrap">
+<div class="breadcrumb"><a href="/">Inicio</a><span class="sep">/</span><a href="/blog">Blog</a><span class="sep">/</span><b>MAGNA-SIRGAS explicado</b></div>
+<div class="post-hero">
+<span class="tag">Técnico · 9 min de lectura</span>
+<h1>MAGNA-SIRGAS: el sistema de coordenadas oficial de Colombia</h1>
+<div class="meta">Junio 2026 · Resolución IGAC 068/2005 · CTM12 · GPS</div>
+</div>
+<div class="post-body">
+<p>Si has pedido un levantamiento topográfico o has revisado un plano técnico en Colombia, habrás visto la sigla <strong>MAGNA-SIRGAS</strong>. ¿Qué es exactamente? ¿Por qué todos los planos deben estar en este sistema? Esta guía lo explica sin tecnicismos innecesarios.</p>
+
+<h2>¿Qué es MAGNA-SIRGAS?</h2>
+<p><strong>MAGNA-SIRGAS</strong> son las siglas de <em>Marco Geocéntrico Nacional de Referencia</em>. Es el sistema oficial de referencia geodésica de Colombia, adoptado mediante la <strong>Resolución IGAC 068 de 2005</strong>. Antes de su adopción, Colombia usaba el Datum Bogotá 1941 (también llamado Datum Provisional de Colombia), que tenía errores acumulados de decenas de metros respecto a las coordenadas reales.</p>
+<p>MAGNA-SIRGAS está basado en el sistema SIRGAS (Sistema de Referencia Geocéntrico para las Américas), que a su vez es compatible con el marco de referencia internacional ITRF (International Terrestrial Reference Frame) y con el sistema WGS84 usado por el GPS.</p>
+
+<h2>¿Por qué cambió Colombia al MAGNA-SIRGAS?</h2>
+<p>El Datum Bogotá 1941 acumulaba errores de hasta 100 metros en zonas alejadas del punto de origen. Con el GPS se hizo evidente que las coordenadas del sistema antiguo no coincidían con la posición real en el terreno. MAGNA-SIRGAS resolvió esto al anclar el sistema a mediciones satelitales precisas, eliminando los errores acumulados.</p>
+<div class="callout">💡 Diferencia práctica: un predio en el Datum Bogotá 1941 puede aparecer desplazado hasta 100 metros respecto a su posición real en Google Maps o en el GPS. En MAGNA-SIRGAS, la coincidencia es sub-métrica.</div>
+
+<h2>¿Cómo se relaciona con el GPS?</h2>
+<p>Los receptores GPS modernos trabajan en WGS84, que es prácticamente idéntico a MAGNA-SIRGAS para efectos prácticos (la diferencia es inferior a 0.5 metros). Esto significa que un GPS moderno entrega coordenadas directamente compatibles con MAGNA-SIRGAS, lo que simplifica enormemente la topografía de campo.</p>
+<p>El topógrafo usa receptores GPS RTK (Real Time Kinematic) para obtener precisión centimétrica sobre la red MAGNA-SIRGAS, usando puntos de la Red Geodésica Activa (REGAC) del IGAC como referencia.</p>
+
+<h2>¿Qué es CTM12?</h2>
+<p>La <strong>Proyección Cartográfica Magna de Colombia (CTM12)</strong> es una proyección cartográfica diseñada específicamente para Colombia, basada en una Mercator Transversal de doble meridiano central (12°W del meridiano central). Fue desarrollada por el IGAC para reemplazar el sistema de planchas antiguo, que dividía Colombia en múltiples zonas con distintos meridianos centrales y generaba inconsistencias en las zonas limítrofes.</p>
+<p>CTM12 usa MAGNA-SIRGAS como datum de referencia. El IGAC está migrando progresivamente a CTM12, aunque actualmente conviven ambos sistemas. Para efectos prácticos, si el plano está en MAGNA-SIRGAS (con cualquier proyección), es válido para trámites.</p>
+
+<h2>¿Por qué el IGAC exige MAGNA-SIRGAS?</h2>
+<p>Desde 2005, el IGAC exige que todos los levantamientos topográficos presentados para actualizaciones catastrales y trámites oficiales estén georreferenciados en MAGNA-SIRGAS. Las razones son:</p>
+<ul>
+<li>Compatibilidad con el catastro nacional y los sistemas de información geográfica del Estado</li>
+<li>Precisión y coherencia con el GPS y la cartografía internacional</li>
+<li>Intercambio de datos entre entidades públicas sin errores de transformación</li>
+<li>Base para el Catastro Multipropósito (CONPES 3859/2016)</li>
+</ul>
+
+<h2>¿Qué pasa si el plano está en coordenadas locales?</h2>
+<p>Los planos en coordenadas locales o en el Datum Bogotá 1941 son rechazados por el IGAC y las curadurías urbanas. El topógrafo debe rehacer el levantamiento en MAGNA-SIRGAS. Por eso es importante solicitar explícitamente que los planos se entreguen georreferenciados en MAGNA-SIRGAS.</p>
+<div class="callout amber">⚠️ Siempre pide por escrito que el entregable sea un plano georreferenciado en MAGNA-SIRGAS (o CTM12). Un topógrafo profesional lo hará por defecto, pero es buena práctica dejarlo claro en el encargo.</div>
+
+<h2>Resumen rápido</h2>
+<ul>
+<li><strong>MAGNA-SIRGAS</strong> = sistema de coordenadas oficial de Colombia desde 2005</li>
+<li>Reemplazó al Datum Bogotá 1941, que tenía errores de hasta 100 m</li>
+<li>Compatible con GPS moderno (WGS84 ≈ MAGNA-SIRGAS)</li>
+<li><strong>CTM12</strong> = proyección cartográfica colombiana sobre MAGNA-SIRGAS</li>
+<li>Todos los planos ante IGAC, curadurías y notarías deben estar en MAGNA-SIRGAS</li>
+</ul>
+
+<div class="post-cta">
+<h3>¿Necesitas planos en MAGNA-SIRGAS?</h3>
+<p>Cotización gratuita. Topógrafo con matrícula COPNIA. Entrega en MAGNA-SIRGAS garantizada.</p>
+<a class="btn btn-primary btn-lg" href="/#contacto">Pedir Cotización →</a>
+</div>
+</div>
+</div>
+</main>
+<footer><div class="wrap"><div class="fg"><div><a class="brand" href="/" style="margin-bottom:14px;display:inline-flex;align-items:center;gap:10px;font-size:18px"><svg aria-hidden="true" height="30" viewbox="0 0 28 38" width="22"><path d="M14,1 C7,1 1,7 1,14 C1,23 14,37 14,37 C14,37 27,23 27,14 C27,7 21,1 14,1 Z" fill="#0d9488"></path><circle cx="14" cy="14" fill="none" r="6.5" stroke="#fff" stroke-width="1.6"></circle><circle cx="16" cy="12" fill="#fff" r="3"></circle></svg><span style="color:#fff">Topógrafo <span style="color:#14b8be">Colombia</span></span></a></div><div><h4>Servicios</h4><a href="/levantamiento-topografico">Levantamiento Topográfico</a><a href="/deslinde-de-predios">Deslinde de Predios</a><a href="/subdivision-de-predios">Subdivisión de Predios</a></div><div><h4>Guía</h4><a href="/guia-topografia">Guía COPNIA & IGAC</a><a href="/blog">Blog</a></div></div><div class="copy">© 2026 topografocolombia.co — Todos los derechos reservados.</div></div></footer>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+</body></html>

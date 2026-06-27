@@ -1,0 +1,49 @@
+# Netlify Redirects — Topografia-CO
+
+# Trailing slash normalisation (homepage keeps trailing slash)
+/levantamiento-topografico/     /levantamiento-topografico    301
+/deslinde-de-predios/           /deslinde-de-predios          301
+/subdivision-de-predios/        /subdivision-de-predios       301
+/replanteo-topografico/         /replanteo-topografico        301
+/topografia-con-dron/           /topografia-con-dron          301
+/guia-topografia/index.html     /guia-topografia/             301
+/blog/index.html                /blog/                        301
+/gracias/index.html             /gracias/                     301
+
+# Department pages trailing slash
+/topografo-bogota/              /topografo-bogota             301
+/topografo-antioquia/           /topografo-antioquia          301
+/topografo-valle-del-cauca/     /topografo-valle-del-cauca    301
+/topografo-cundinamarca/        /topografo-cundinamarca       301
+/topografo-atlantico/           /topografo-atlantico          301
+/topografo-bolivar/             /topografo-bolivar            301
+/topografo-santander/           /topografo-santander          301
+/topografo-cordoba/             /topografo-cordoba            301
+/topografo-narino/              /topografo-narino             301
+/topografo-norte-de-santander/  /topografo-norte-de-santander 301
+/topografo-boyaca/              /topografo-boyaca             301
+/topografo-tolima/              /topografo-tolima             301
+/topografo-cauca/               /topografo-cauca              301
+/topografo-huila/               /topografo-huila              301
+/topografo-magdalena/           /topografo-magdalena          301
+/topografo-meta/                /topografo-meta               301
+/topografo-cesar/               /topografo-cesar              301
+/topografo-la-guajira/          /topografo-la-guajira         301
+/topografo-risaralda/           /topografo-risaralda          301
+/topografo-caldas/              /topografo-caldas             301
+/topografo-sucre/               /topografo-sucre              301
+/topografo-quindio/             /topografo-quindio            301
+/topografo-choco/               /topografo-choco              301
+/topografo-casanare/            /topografo-casanare           301
+/topografo-arauca/              /topografo-arauca             301
+/topografo-putumayo/            /topografo-putumayo           301
+/topografo-caqueta/             /topografo-caqueta            301
+/topografo-amazonas/            /topografo-amazonas           301
+/topografo-guaviare/            /topografo-guaviare           301
+/topografo-san-andres/          /topografo-san-andres         301
+/topografo-vichada/             /topografo-vichada            301
+/topografo-guainia/             /topografo-guainia            301
+/topografo-vaupes/              /topografo-vaupes             301
+
+# 404 fallback
+/*    /index.html    200
