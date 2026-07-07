@@ -22,7 +22,7 @@
 <script type="application/ld+json">{
 "@context":"https://schema.org","@graph":[
 {"@type":"WebSite","name":"Topógrafo Colombia","url":"https://topografocolombia.co/"},
-{"@type":"Organization","name":"Topógrafo Colombia","url":"https://topografocolombia.co/","description":"Directorio nacional de topógrafos con matrícula profesional CPNT. Cobertura en los 33 departamentos de Colombia.","areaServed":{"@type":"Country","name":"Colombia"},"knowsAbout":["levantamiento topográfico","deslinde de predios","subdivisión de predios","replanteo topográfico","topografía con dron","matrícula CPNT","MAGNA-SIRGAS","catastro IGAC","Ley 388 de 1997"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios de topografía en Colombia","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Levantamiento Topográfico","url":"https://topografocolombia.co/levantamiento-topografico"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Deslinde de Predios","url":"https://topografocolombia.co/deslinde-de-predios"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Subdivisión de Predios","url":"https://topografocolombia.co/subdivision-de-predios"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Replanteo Topográfico","url":"https://topografocolombia.co/replanteo-topografico"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Topografía con Dron","url":"https://topografocolombia.co/topografia-con-dron"}}]}},
+{"@type":"Organization","@id":"https://topografocolombia.co/#organization","sameAs":[],"name":"Topógrafo Colombia","url":"https://topografocolombia.co/","description":"Directorio nacional de topógrafos con matrícula profesional CPNT. Cobertura en los 33 departamentos de Colombia.","areaServed":{"@type":"Country","name":"Colombia"},"knowsAbout":["levantamiento topográfico","deslinde de predios","subdivisión de predios","replanteo topográfico","topografía con dron","matrícula CPNT","MAGNA-SIRGAS","catastro IGAC","Ley 388 de 1997"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios de topografía en Colombia","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Levantamiento Topográfico","url":"https://topografocolombia.co/levantamiento-topografico"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Deslinde de Predios","url":"https://topografocolombia.co/deslinde-de-predios"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Subdivisión de Predios","url":"https://topografocolombia.co/subdivision-de-predios"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Replanteo Topográfico","url":"https://topografocolombia.co/replanteo-topografico"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Topografía con Dron","url":"https://topografocolombia.co/topografia-con-dron"}}]}},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"¿El topógrafo debe tener matrícula profesional CPNT en Colombia?","acceptedAnswer":{"@type":"Answer","text":"Sí. En Colombia, los topógrafos deben estar inscritos ante el CPNT (Consejo Profesional Nacional de Topografía). Los planos y memorias técnicas firmados por un profesional sin matrícula vigente no tienen validez ante el IGAC, la curaduría urbana ni el Registro de Instrumentos Públicos."}},
 {"@type":"Question","name":"¿Cuánto cuesta un levantamiento topográfico en Colombia?","acceptedAnswer":{"@type":"Answer","text":"El valor varía según la superficie, la topografía del terreno y el departamento. Solicita cotización gratuita; el topógrafo de tu departamento responde con precio exacto en menos de 24 horas."}},
@@ -199,12 +199,13 @@
 <li><svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20"><path d="M20 6L9 17l-5-5"></path></svg>Planos en DWG + PDF, georreferenciados en MAGNA-SIRGAS</li>
 </ul>
 </div>
-<form action="/gracias/?ok=1" class="form-card" data-netlify="true" method="POST" name="pedido-presupuesto-co">
+<form action="/gracias/?ok=1" class="form-card" data-netlify="true" data-netlify-honeypot="bot-field" method="POST" name="pedido-presupuesto-co">
 <input name="form-name" type="hidden" value="pedido-presupuesto-co"/>
+<input name="bot-field" type="hidden" />
 <h3>Los datos del predio</h3>
 <p class="sub">// respuesta &lt; 24h · sin compromiso</p>
 <div class="two">
-<div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" placeholder="Tu nombre" required type="text"/></div>
+<div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" placeholder="Su nombre" required type="text"/></div>
 <div class="field"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" placeholder="300 123 4567" required type="tel"/></div>
 </div>
 <div class="field"><label for="email">Email</label><input id="email" name="email" placeholder="email@ejemplo.com.co" required type="email"/></div>
