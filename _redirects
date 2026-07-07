@@ -44,6 +44,3 @@
 /topografo-vichada/             /topografo-vichada            301
 /topografo-guainia/             /topografo-guainia            301
 /topografo-vaupes/              /topografo-vaupes             301
-
-# 404 fallback
-/*    /index.html    200

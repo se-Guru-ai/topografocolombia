@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /gracias/
 
-Sitemap: https://topografocolombia.co/sitemap.xml
+Sitemap: https://topografo.co/sitemap.xml
