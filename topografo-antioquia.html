@@ -29,6 +29,10 @@
 .dhero .grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(circle at 75% 30%,#000,transparent 78%);pointer-events:none}
 .dhero-in{position:relative;padding:30px 0 54px;max-width:760px}
 .badge-live{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ok);background:#eaf7f0;border:1px solid #bfe6d2;border-radius:999px;padding:6px 13px;margin-bottom:18px}
+.badge-soon{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:#8a6d1a;background:#fdf7e8;border:1px solid #ecd9a8;border-radius:999px;padding:6px 13px;margin-bottom:18px}
+.estado-box{background:var(--panel-2);border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+.estado-box .k{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.estado-box .p{font-size:14.5px;color:var(--ink-2);line-height:1.65;margin-bottom:16px}
 .badge-live .d{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(31,157,97,.5);animation:pulse 2s infinite}
 .dhero h1{font-family:var(--serif);font-size:clamp(38px,5vw,60px);font-weight:800;letter-spacing:-.01em;line-height:1.04}
 .dhero h1 em{font-style:normal;color:var(--brand-deep)}
@@ -101,9 +105,9 @@
 <section class="dhero">
 <div class="grid-bg"></div>
 <div class="wrap"><div class="dhero-in">
-<span class="badge-live"><span class="d"></span>Recibiendo solicitudes — topógrafo con matrícula CPNT</span>
+<span class="badge-soon">⏳ Próximamente: buscando topógrafo con matrícula CPNT</span>
 <h1>Topógrafo con matrícula CPNT <em>en Antioquia</em></h1>
-<p>Topógrafo con matrícula profesional CPNT disponible en todo el departamento de Antioquia. Levantamientos, deslindes, subdivisiones y replanteo en MAGNA-SIRGAS. Cotización gratuita en menos de 24h.</p>
+<p>Levantamientos, deslindes, subdivisiones y replanteo georreferenciados en MAGNA-SIRGAS por topógrafo con matrícula CPNT, para obra, licencias y trámites ante el IGAC en todo el departamento de Antioquia. Cotización gratuita en menos de 24h.</p>
 <div class="dhero-cta">
 <a class="btn btn-primary btn-lg" href="#contacto">Pedir Cotización →</a>
 <a class="btn btn-ghost btn-lg" href="/#departamentos">Ver departamentos disponibles</a>
@@ -115,22 +119,10 @@
 <div class="layout">
 <div class="col-main">
 <section>
-<div class="op">
-<div class="op-top"><span class="live"><span class="d"></span>Topógrafo asignado</span><span>REF · ANT-01</span></div>
-<div class="op-head">
-<div class="op-avatar">CP</div>
-<div class="op-id">
-<h3>Topógrafo con matrícula CPNT</h3>
-<div class="role">Profesional habilitado · Departamento de Antioquia</div>
-<span class="cred"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 3v6c0 5-3.4 8.5-8 11-4.6-2.5-8-6-8-11V5l8-3z"></path><path d="M9 12l2 2 4-4"></path></svg>Matrícula CPNT vigente · verificable en cpnt.gov.co</span>
-</div>
-</div>
-<div class="op-stats"><div class="cell"><div class="k">Sistema</div><div class="v">MAGNA-SIRGAS</div></div><div class="cell"><div class="k">Cotización</div><div class="v">24h</div></div><div class="cell"><div class="k">Cobertura</div><div class="v">Antioquia</div></div></div>
-<div class="op-body">
-<div class="op-tags"><span class="op-tag">Levantamiento</span><span class="op-tag">Georreferenciado</span><span class="op-tag">Deslinde</span><span class="op-tag">Subdivisión</span><span class="op-tag">Replanteo</span><span class="op-tag">Catastro IGAC</span></div>
-<p class="op-bio">Profesional con matrícula CPNT vigente y cobertura en todo el departamento de Antioquia. Levantamientos topográficos georreferenciados en MAGNA-SIRGAS, deslindes, subdivisiones, replanteo y trámites ante el IGAC, las curadurías urbanas y el Registro de Instrumentos Públicos. Cotización gratuita en menos de 24h.</p>
-<div class="op-contact"><a class="tel" href="#contacto"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>Solicitar cotización</a></div>
-</div>
+<div class="estado-box">
+<p class="k">Estado del servicio</p>
+<p class="p">Estamos seleccionando el topógrafo con matrícula CPNT para Antioquia. Puedes enviar tu pedido igualmente; te contactaremos en cuanto tengamos topógrafo asignado en tu zona.</p>
+<a class="btn btn-primary" href="#contacto" style="display:inline-flex">Enviar pedido anticipado →</a>
 </div>
 </section>
 <section>
