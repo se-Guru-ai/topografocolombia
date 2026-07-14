@@ -72,17 +72,51 @@
 <section class="ctaband" id="contacto" style="margin:40px -9999px;padding:54px 9999px;background:linear-gradient(170deg,#eef4f3,#f3f7f6)">
 <h2 style="font-family:var(--serif);font-size:clamp(24px,3vw,34px);font-weight:800;margin-bottom:8px">¿Necesitas topografía con dron en Colombia?</h2>
 <p style="color:var(--ink-2);font-size:16px;margin-bottom:28px">Cotización gratuita. Topógrafo con matrícula CPNT. Respuesta en menos de 24 horas.</p>
-<form name="pedido-dron-co" data-netlify="true" data-netlify-honeypot="bot-field" method="POST" action="/gracias/?ok=1" style="max-width:520px;margin:0 auto;text-align:left;background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px">
-  <input name="form-name" type="hidden" value="pedido-dron-co"/>
+<form class="side-form" name="pedido-dron-co" data-netlify="true" data-netlify-honeypot="bot-field" action="/gracias/?ok=1" method="POST">
+<input name="form-name" type="hidden" value="pedido-dron-co"/>
 <input name="bot-field" type="hidden" />
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
-    <div><label style="font-size:13px;font-weight:600;display:block;margin-bottom:4px">Nombre</label><input name="nombre" type="text" placeholder="Tu nombre" required style="width:100%;box-sizing:border-box;padding:9px 12px;border:1px solid var(--line-2);border-radius:8px;font-size:14px"/></div>
-    <div><label style="font-size:13px;font-weight:600;display:block;margin-bottom:4px">Teléfono</label><input name="telefono" type="tel" placeholder="300 123 4567" required style="width:100%;box-sizing:border-box;padding:9px 12px;border:1px solid var(--line-2);border-radius:8px;font-size:14px"/></div>
-  </div>
-  <div style="margin-bottom:12px"><label style="font-size:13px;font-weight:600;display:block;margin-bottom:4px">Email</label><input name="email" type="email" placeholder="email@ejemplo.com.co" required style="width:100%;box-sizing:border-box;padding:9px 12px;border:1px solid var(--line-2);border-radius:8px;font-size:14px"/></div>
-  <div style="margin-bottom:12px"><label style="font-size:13px;font-weight:600;display:block;margin-bottom:4px">Departamento</label><select name="departamento" required style="width:100%;padding:9px 12px;border:1px solid var(--line-2);border-radius:8px;font-size:14px"><option value="">Selecciona</option><option>Bogotá D.C.</option><option>Antioquia</option><option>Valle del Cauca</option><option>Cundinamarca</option><option>Atlántico</option><option>Bolívar</option><option>Santander</option><option>Córdoba</option><option>Nariño</option><option>Norte de Santander</option><option>Boyacá</option><option>Tolima</option><option>Cauca</option><option>Huila</option><option>Magdalena</option><option>Meta</option><option>Cesar</option><option>La Guajira</option><option>Risaralda</option><option>Caldas</option><option>Sucre</option><option>Quindío</option><option>Chocó</option><option>Casanare</option><option>Arauca</option><option>Putumayo</option><option>Caquetá</option><option>Amazonas</option><option>Guaviare</option><option>San Andrés y Providencia</option><option>Vichada</option><option>Guainía</option><option>Vaupés</option></select></div>
-  <div style="margin-bottom:18px"><label style="font-size:13px;font-weight:600;display:block;margin-bottom:4px">Mensaje</label><textarea name="mensaje" rows="3" placeholder="Describe el área: hectáreas aproximadas, municipio, tipo de producto requerido..." style="width:100%;box-sizing:border-box;padding:9px 12px;border:1px solid var(--line-2);border-radius:8px;font-size:14px"></textarea></div>
-  <button class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Pedir Cotización Gratuita →</button>
+<h3>Solicitar cotización</h3>
+<p class="sub">// respuesta &lt; 24h · sin compromiso</p>
+<div class="field"><label>Nombre</label><input name="nome" type="text" placeholder="Tu nombre" required/></div>
+<div class="field"><label>Teléfono</label><input name="telefone" type="tel" placeholder="300 123 4567" required/></div>
+<div class="field"><label>Email</label><input name="email" type="email" placeholder="email@ejemplo.com.co" required/></div>
+<div class="field"><label>Departamento</label><select name="departamento" required><option value="">Selecciona</option>
+<option>Bogotá D.C.</option>
+<option>Antioquia</option>
+<option>Valle del Cauca</option>
+<option>Cundinamarca</option>
+<option>Atlántico</option>
+<option>Bolívar</option>
+<option>Santander</option>
+<option>Córdoba</option>
+<option>Nariño</option>
+<option>Norte de Santander</option>
+<option>Boyacá</option>
+<option>Tolima</option>
+<option>Cauca</option>
+<option>Huila</option>
+<option>Magdalena</option>
+<option>Meta</option>
+<option>Cesar</option>
+<option>La Guajira</option>
+<option>Risaralda</option>
+<option>Caldas</option>
+<option>Sucre</option>
+<option>Quindío</option>
+<option>Chocó</option>
+<option>Casanare</option>
+<option>Arauca</option>
+<option>Putumayo</option>
+<option>Caquetá</option>
+<option>Amazonas</option>
+<option>Guaviare</option>
+<option>San Andrés y Providencia</option>
+<option>Vichada</option>
+<option>Guainía</option>
+<option>Vaupés</option>
+</select></div>
+<div class="field"><label>Área aproximada y finalidad</label><textarea name="descripcion" placeholder="Ej.: predio de 500 m² para licencia de construcción ante la curaduría..." rows="3"></textarea></div>
+<button class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Enviar pedido →</button>
 </form>
 </section>
 <h3 style="margin-top:40px;font-size:17px">Servicios relacionados</h3>
