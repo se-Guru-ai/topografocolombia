@@ -66,7 +66,7 @@
   <input name="form-name" type="hidden" value="pedido-guia-co"/>
 <input name="bot-field" type="hidden" />
   <input name="nombre" type="text"/><input name="telefono" type="tel"/><input name="email" type="email"/><select name="departamento"></select><select name="tipo"></select><textarea name="descripcion"></textarea>
-</form>
+</form><script>(function(){var f=document.currentScript.previousElementSibling;if(!f||f.tagName!=="FORM")return;f.addEventListener("submit",function(){var b=f.querySelector("button");if(!b||b.dataset.enviando)return;b.dataset.enviando="1";setTimeout(function(){b.disabled=true;b.style.opacity=".6";b.style.cursor="default";b.textContent=b.dataset.enviandoTexto||"A enviar...";},0);});})();</script>
 
 <main>
   <div class="wrap">
