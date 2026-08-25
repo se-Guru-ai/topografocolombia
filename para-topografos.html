@@ -27,26 +27,128 @@
 <section class="hero">
 <div class="grid-bg"></div>
 <span class="cross c1"></span><span class="cross c2"></span><span class="cross c3"></span>
-<div class="wrap hero-grid">
+<div class="wrap">
 <div>
 <span class="coord-tag">// PARA TOPÓGRAFOS</span>
 <h1>¿Eres topógrafo? <span class="accent">Recibe solicitudes de clientes en tu zona.</span></h1>
 <p class="lead">Recibimos solicitudes de clientes de topografía en toda Colombia. Buscamos un topógrafo por zona para atenderlas. Regístrate gratis: si tu zona sigue libre, las solicitudes que entren son para ti.</p>
 </div>
-<form class="side-form" name="recrutamento-co" data-netlify="true" data-netlify-honeypot="bot-field" action="/gracias-registro" method="POST">
-<input name="form-name" type="hidden" value="recrutamento-co"/>
-<input name="bot-field" type="hidden" />
-<h3>Regístrate gratis</h3>
-<p class="sub"></p>
-<div class="field"><label>Nombre</label><input name="nome" type="text" placeholder="Tu nombre" required/></div>
-<div class="field"><label>Email</label><input name="email" type="email" placeholder="email@ejemplo.com.co" required/></div>
-<div class="field"><label>Ciudad o departamento</label><input name="zona" type="text" placeholder="Ej.: Medellín" required/></div>
-<div class="field"><label>Teléfono (opcional)</label><input name="telefone" type="tel" placeholder="300 123 4567"/></div>
-<div class="field"><label>¿Cómo se describe profesionalmente?</label><input name="papel" type="text" maxlength="90" placeholder="Ej.: Topógrafo · Nombre de la empresa" required/></div>
-<button class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Quiero recibir solicitudes</button>
-</form><script>(function(){var f=document.currentScript.previousElementSibling;if(!f||f.tagName!=="FORM")return;f.addEventListener("submit",function(){var b=f.querySelector("button");if(!b||b.dataset.enviando)return;b.dataset.enviando="1";setTimeout(function(){b.disabled=true;b.style.opacity=".6";b.style.cursor="default";b.textContent=b.dataset.enviandoTexto||"Enviando...";},0);});})();</script>
 </div>
 </section>
+<section><div class="wrap">
+<section class="ins-venda" id="ins-venda">
+  <div>
+    <ol class="ins-como" id="ins-como"><li><span><b>Alguien busca un topógrafo y llega a nuestro sitio</b><span>Aparecemos en la búsqueda de su zona. Rellena una solicitud: qué necesita, dónde es y cómo contactarle.</span></span></li><li><span><b>La solicitud le llega directamente por correo</b><span>Con el nombre, el contacto y la descripción del trabajo. Sin call center, sin subasta, sin pasar por nadie más.</span></span></li><li><span><b>El trabajo es suyo, de la cotización a la factura</b><span>Acuerda el precio directamente con el cliente y le factura. No entramos en la relación ni nos quedamos con un porcentaje.</span></span></li><li><span><b>Una zona, un profesional</b><span>Mientras la zona sea suya, sus solicitudes no van a nadie más.</span></span></li></ol>
+    <div class="ins-selo"><b>Lo que hacemos nosotros:</b> conectamos a quien necesita topografía con el profesional de su zona. Quien ejecuta el trabajo es siempre el profesional.</div>
+  </div>
+  <aside class="ins-card">
+    <h3>Inscríbase</h3>
+    <p class="ins-vagas" id="ins-vagas"></p>
+    <p>Son tres pasos y unos dos minutos. No se envía nada hasta el final, y puede volver atrás en cualquier momento.</p>
+    <button type="button" class="ins-b1" id="ins-abrir" style="width:100%">Inscribirme &rarr;</button>
+    <p class="ins-fine">Sin costo de inscripción. Una zona, un profesional.</p>
+  </aside>
+</section>
+
+<div class="ins-passos" id="ins-passos" hidden></div>
+
+<form id="ins-f" name="recrutamento-co" method="POST" action="/gracias-registro" hidden
+      data-netlify="true" data-netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="recrutamento-co">
+  <p hidden><label>x <input name="bot-field"></label></p>
+  <input type="hidden" name="pais" value="CO">
+  <input type="hidden" name="zona_principal" id="ins-h-princ">
+  <input type="hidden" name="zonas_extra" id="ins-h-extra">
+  <input type="hidden" name="certificacao_por_zona" id="ins-h-cobre">
+  <input type="hidden" name="condicoes_versao" value="2026-08-25">
+
+  <section class="ins-passo" data-p="1">
+    <h2>Quién es y dónde trabaja</h2><p class="ins-sub">Paso 1 de 3 · aún no se envía nada</p>
+    <div class="ins-bloco">
+      <h4>Sus datos</h4><p class="ins-ajuda">El teléfono es para hablar con usted. No aparece en el sitio.</p>
+      <div class="ins-campo"><label for="ins-nome">Nombre</label>
+        <input class="ins-inp" id="ins-nome" name="nome" required></div>
+      <div class="ins-campo"><label for="ins-email">Correo electrónico</label>
+        <input class="ins-inp" id="ins-email" name="email" type="email" required></div>
+      <div class="ins-campo"><label for="ins-tel">Teléfono</label>
+        <input class="ins-inp" id="ins-tel" name="telefone" type="tel" required></div>
+      <div class="ins-campo"><label for="ins-papel">¿Cómo se describe profesionalmente?</label>
+        <input class="ins-inp" id="ins-papel" name="papel" required></div>
+      <div class="ins-campo"><label for="ins-emp">Empresa <span class="ins-opc">(opcional)</span></label>
+        <input class="ins-inp" id="ins-emp" name="empresa"></div>
+      <div class="ins-campo"><label>¿Qué quiere que aparezca en su página?</label>
+        <div class="ins-radios">
+          <label class="ins-radio"><input type="radio" name="mostrar_como" value="pessoa" checked>
+            <span><b>Mi nombre</b><small>La página queda a nombre propio.</small></span></label>
+          <label class="ins-radio"><input type="radio" name="mostrar_como" value="empresa">
+            <span><b>Mi empresa</b><small>La página queda con el nombre de la empresa.</small></span></label>
+        </div></div>
+    </div>
+    <div class="ins-bloco">
+      <h4>Su zona principal</h4><p class="ins-ajuda">Donde tiene la oficina. Es la que lleva su nombre en la página.</p>
+      <div class="ins-principal" id="ins-principal"></div>
+    </div>
+    <div class="ins-bloco">
+      <h4>Otras zonas que también cubre <span class="ins-opc">(opcional)</span></h4>
+      <p class="ins-ajuda">Elija las que puede atender. En gris ya tiene profesional; en ámbar se está decidiendo con otra persona.</p>
+      <div class="ins-seltopo">
+        <select class="ins-inp" id="ins-regiao" aria-label="Otras zonas que también cubre"></select>
+        <div class="ins-legenda">
+          <span><i class="l"></i>libre</span>
+          <span><i class="v"></i>en análisis</span>
+          <span><i class="o"></i>ya tiene profesional</span>
+        </div>
+      </div>
+      <div class="ins-zonas" id="ins-zonas"></div>
+    </div>
+    <div class="ins-erro" id="ins-e1"></div>
+    <div class="ins-nav"><div class="dir">
+      <button type="button" class="ins-b1" data-ir="2">Continuar &rarr;</button></div></div>
+  </section>
+
+  <section class="ins-passo" data-p="2" hidden>
+    <h2 id="ins-h2">Las condiciones</h2><p class="ins-sub">Paso 2 de 3 · sigue sin enviarse</p>
+    <div class="ins-bloco"><h4>Lo que esto le cuesta</h4><div class="ins-preco"><b>Por ahora, gratuito</b><p>No hay mensualidad y no cobramos porcentaje sobre su trabajo. Si eso cambia, se lo diremos antes.</p></div></div>
+    <div class="ins-bloco">
+      <h4>Nuestras condiciones</h4><p class="ins-ajuda">Son estas, tal como van en el correo. Léalas antes de aceptar.</p>
+      <div class="ins-regras"><dl><dt>1. Rapidez en la respuesta</dt><dd>El contacto con el cliente debe hacerse el mismo día, idealmente en las primeras horas, y nunca más allá de 24 horas. En la mayoría de los casos, el cliente adjudica a quien responde primero.</dd><dt>2. Contacto efectivo</dt><dd>Por teléfono o por correo, toda solicitud debe tener respuesta. Una solicitud sin respuesta deja al cliente esperando y compromete la credibilidad de su trabajo y del nuestro.</dd><dt>3. Cotización gratuita y sin compromiso</dt><dd>Es lo que dice nuestro sitio y la expectativa con la que el cliente llega hasta usted. Debe respetarse sin excepción.</dd><dt>4. Profesionalismo</dt><dd>Trabajo entregado en los plazos acordados, con el cliente informado en cada etapa, y en condiciones de ser aceptado por la Oficina de Registro de Instrumentos Públicos, el gestor catastral de su jurisdicción o el notario.</dd><dt>5. Díganos cómo fue</dt><dd>Cuando le pasemos una solicitud, cuéntenos si contactó al cliente, si envió cotización o si se adjudicó. Es esta información la que nos permite entender qué está funcionando.</dd></dl></div>
+      <label class="ins-aceitar">
+        <input type="checkbox" name="condicoes" id="ins-aceite" value="aceite">
+        <span><b>He leído y acepto las condiciones</b><br><small>Queda registrada la fecha y la versión que leyó.</small></span>
+      </label>
+    </div>
+    <div class="ins-bloco" id="ins-blococob" hidden>
+      <h4>Qué puede hacer en cada zona</h4><p class="ins-ajuda">En este país la autoridad para certificar es local. Díganos dónde puede, para no enviarle solicitudes que no pueda cerrar.</p>
+      <div id="ins-cobertura"></div>
+    </div>
+    <div class="ins-erro" id="ins-e2"></div>
+    <div class="ins-nav">
+      <button type="button" class="ins-b2" data-ir="1">&larr; Volver</button>
+      <div class="dir"><button type="button" class="ins-b1" data-ir="3">Continuar &rarr;</button></div>
+    </div>
+  </section>
+
+  <section class="ins-passo" data-p="3" hidden>
+    <h2>Confirmar y enviar</h2><p class="ins-sub">Paso 3 de 3 · ahora sí se envía</p>
+    <div class="ins-bloco">
+      <h4>Revise antes de enviar</h4><p class="ins-ajuda">Esto se lee de lo que rellenó. Vuelva atrás para corregir lo que haga falta.</p>
+      <div class="ins-rev" id="ins-rev"></div>
+      <div class="ins-seguir">
+        <h4>Qué pasa después de enviar</h4><ol><li>Recibe un correo de confirmación nuestro, en la dirección que indicó.</li><li>Confirmamos los datos y publicamos su página con su nombre.</li><li>A partir de ahí, las solicitudes de su zona le llegan por correo.</li></ol>
+        <p class="ins-ajuda" style="margin:11px 0 0"><b>Una solicitud solo sirve si llega.</b> En cuanto envíe, agregue nuestra dirección a sus contactos. Es lo que evita que la primera solicitud caiga en spam.</p>
+      </div>
+    </div>
+    <div class="ins-erro" id="ins-e3"></div>
+    <div class="ins-nav">
+      <button type="button" class="ins-b2" data-ir="2">&larr; Volver</button>
+      <div class="dir"><button type="submit" class="ins-b1">Enviar inscripción</button></div>
+    </div>
+  </section>
+</form>
+<script id="ins-dados" type="application/json">{"g":[{"k":"_","n":"Sem região","f":[{"s":"amazonas","n":"Amazonas","e":"livre"},{"s":"antioquia","n":"Antioquia","e":"livre"},{"s":"arauca","n":"Arauca","e":"livre"},{"s":"atlantico","n":"Atlántico","e":"livre"},{"s":"bogota","n":"Bogotá D.C.","e":"livre"},{"s":"bolivar","n":"Bolívar","e":"livre"},{"s":"boyaca","n":"Boyacá","e":"ocup"},{"s":"caldas","n":"Caldas","e":"livre"},{"s":"caqueta","n":"Caquetá","e":"livre"},{"s":"casanare","n":"Casanare","e":"livre"},{"s":"cauca","n":"Cauca","e":"livre"},{"s":"cesar","n":"Cesar","e":"livre"},{"s":"choco","n":"Chocó","e":"livre"},{"s":"cundinamarca","n":"Cundinamarca","e":"livre"},{"s":"cordoba","n":"Córdoba","e":"livre"},{"s":"guainia","n":"Guainía","e":"livre"},{"s":"guaviare","n":"Guaviare","e":"livre"},{"s":"huila","n":"Huila","e":"livre"},{"s":"la-guajira","n":"La Guajira","e":"livre"},{"s":"magdalena","n":"Magdalena","e":"livre"},{"s":"meta","n":"Meta","e":"livre"},{"s":"narino","n":"Nariño","e":"livre"},{"s":"norte-de-santander","n":"Norte de Santander","e":"livre"},{"s":"putumayo","n":"Putumayo","e":"livre"},{"s":"quindio","n":"Quindío","e":"livre"},{"s":"risaralda","n":"Risaralda","e":"livre"},{"s":"san-andres","n":"San Andrés y Providencia","e":"livre"},{"s":"santander","n":"Santander","e":"ocup"},{"s":"sucre","n":"Sucre","e":"livre"},{"s":"tolima","n":"Tolima","e":"ocup"},{"s":"valle-del-cauca","n":"Valle del Cauca","e":"livre"},{"s":"vaupes","n":"Vaupés","e":"livre"},{"s":"vichada","n":"Vichada","e":"livre"}],"livres":30}],"u":["departamento","departamentos"],"cert":false,"livres":30}</script>
+<script id="ins-txt" type="application/json">{"eyebrow":"Para topógrafos","como_t":"Cómo funciona","selo":"<b>Lo que hacemos nosotros:</b> conectamos a quien necesita topografía con el profesional de su zona. Quien ejecuta el trabajo es siempre el profesional.","card_t":"Inscríbase","card_p":"Son tres pasos y unos dos minutos. No se envía nada hasta el final, y puede volver atrás en cualquier momento.","botao":"Inscribirme","fine":"Sin costo de inscripción. Una zona, un profesional.","vagas_1":"{n} {u} aún por asignar","vagas_0":"Sin vacantes en este momento","p1":"Datos y zonas","p2":"Condiciones","p3":"Confirmar y enviar","h1":"Quién es y dónde trabaja","s1":"Paso 1 de 3 · aún no se envía nada","h2":"Las condiciones","s2":"Paso 2 de 3 · sigue sin enviarse","h2c":"Las condiciones y lo que puede cubrir","h3":"Confirmar y enviar","s3":"Paso 3 de 3 · ahora sí se envía","b_dados":"Sus datos","a_dados":"El teléfono es para hablar con usted. No aparece en el sitio.","l_nome":"Nombre","l_email":"Correo electrónico","l_tel":"Teléfono","l_papel":"¿Cómo se describe profesionalmente?","l_emp":"Empresa","opc":"(opcional)","l_mostrar":"¿Qué quiere que aparezca en su página?","m_pessoa":"Mi nombre","m_pessoa_d":"La página queda a nombre propio.","m_empresa":"Mi empresa","m_empresa_d":"La página queda con el nombre de la empresa.","b_princ":"Su zona principal","a_princ":"Donde tiene la oficina. Es la que lleva su nombre en la página.","princ_vazio":"Elija abajo la zona donde tiene la oficina.","trocar":"cambiar","b_sec":"Otras zonas que también cubre","a_sec":"Elija las que puede atender. En gris ya tiene profesional; en ámbar se está decidiendo con otra persona.","leg_l":"libre","leg_v":"en análisis","leg_o":"ya tiene profesional","est_l":"LIBRE","est_v":"EN ANÁLISIS","est_o":"ASIGNADA","est_p":"PRINCIPAL","b_preco":"Lo que esto le cuesta","gratis":"Por ahora, gratuito","gratis_n":"No hay mensualidad y no cobramos porcentaje sobre su trabajo. Si eso cambia, se lo diremos antes.","b_regras":"Nuestras condiciones","a_regras":"Son estas, tal como van en el correo. Léalas antes de aceptar.","aceito":"He leído y acepto las condiciones","aceito_d":"Queda registrada la fecha y la versión que leyó.","b_cob":"Qué puede hacer en cada zona","a_cob":"En este país la autoridad para certificar es local. Díganos dónde puede, para no enviarle solicitudes que no pueda cerrar.","cob_tudo":"todo","cob_parte":"solo levantamiento","b_rev":"Revise antes de enviar","a_rev":"Esto se lee de lo que rellenó. Vuelva atrás para corregir lo que haga falta.","k_pais":"País","k_nome":"Nombre","k_email":"Correo","k_tel":"Teléfono","k_papel":"Descripción profesional","k_emp":"Empresa","k_mostrar":"En la página aparece","k_princ":"Zona principal","k_sec":"También cubre","k_cond":"Condiciones","k_cob":"Certificación por zona","v_vazio":"por rellenar","v_sememp":"no indicada","v_nenhuma":"ninguna","v_aceites":"aceptadas · versión {v}","v_poraceitar":"por aceptar","seguir_t":"Qué pasa después de enviar","seguir_sem_conf":"Recibimos su inscripción y nos ponemos en contacto con usted.","seguir_n":"<b>Una solicitud solo sirve si llega.</b> En cuanto envíe, agregue nuestra dirección a sus contactos. Es lo que evita que la primera solicitud caiga en spam.","voltar":"Volver","continuar":"Continuar","enviar":"Enviar inscripción","e_falta":"Falta {q}.","e_email":"El correo no parece válido.","e_princ":"Elija la zona principal. Es la que lleva su nombre en la página.","e_emp":"Eligió mostrar la empresa, pero no indicó su nombre.","e_cond":"Tiene que aceptar las condiciones para continuar.","q_nome":"su nombre","q_email":"su correo","q_tel":"su teléfono","q_papel":"cómo se describe"}</script>
+<script src="/inscricao.js" defer></script>
+</div></section>
 </main>
 
 <footer>
