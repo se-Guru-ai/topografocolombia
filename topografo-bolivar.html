@@ -131,7 +131,7 @@
 <section class="dhero">
 <div class="grid-bg"></div>
 <div class="wrap"><div class="dhero-in">
-<span class="badge-live"><span class="d"></span>Recibiendo solicitudes — un topógrafo por departamento</span>
+
 <h1>Topógrafo <em>en Bolívar</em></h1>
 <p>Levantamientos, deslindes, subdivisiones y replanteo georreferenciados en MAGNA-SIRGAS, para obra, licencias y trámites catastrales en todo el departamento de Bolívar. Cotización gratuita en menos de 24h.</p>
 <div class="dhero-cta">
@@ -154,22 +154,6 @@
 <ul class="check"><li><span><b>Predio cerca del Canal del Dique:</b> Diez municipios de Bolívar, de Calamar a Cartagena, están en el área del proyecto del Canal del Dique. Aunque tu predio solo quede cerca, conviene tener documentados el área y los linderos con un levantamiento vigente.</span></li><li><span><b>Isla o cayo en el Rosario:</b> En el archipiélago, playas y bajamar son bienes de uso público bajo Dimar, y parte del territorio es Parque Nacional. El plano separa lo que conste en el folio de matrícula, si existe, la franja pública y lo que cae dentro del parque.</span></li><li><span><b>Casa antigua en Mompox o en el centro histórico:</b> En Mompox y en el centro de Cartagena, intervenir un inmueble puede requerir autorización previa de la autoridad de patrimonio, además de lo catastral. El levantamiento es el punto de partida, y conviene consultar antes las reglas del sector.</span></li><li><span><b>Predio titulado por la URT en El Carmen de Bolívar:</b> Cuando la URT entrega títulos en zonas rurales como Las Piedras y El Compadrito, el propietario necesita linderos claros para vender, dividir o pedir crédito. Un levantamiento fija el área con coordenadas y la compara con el título.</span></li></ul>
 </section>
 <section>
-<div class="op">
-<div class="op-top"><span class="live"><span class="d"></span>Topógrafo asignado</span><span>REF · BOL-01</span></div>
-<div class="op-head">
-<div class="op-avatar">TY</div>
-<div class="op-id">
-<h3>Topografía y Dibujo UQ</h3>
-<div class="role">Departamento de Bolívar</div>
-</div>
-</div>
-<div class="op-stats"><div class="cell"><div class="k">Sistema</div><div class="v">MAGNA-SIRGAS</div></div><div class="cell"><div class="k">Cotización</div><div class="v">24h</div></div><div class="cell"><div class="k">Cobertura</div><div class="v">Bolívar</div></div></div>
-<div class="op-body">
-<div class="op-tags"><span class="op-tag">Levantamiento</span><span class="op-tag">Georreferenciado</span><span class="op-tag">Deslinde</span><span class="op-tag">Subdivisión</span><span class="op-tag">Replanteo</span><span class="op-tag">Catastro</span></div>
-<p class="op-bio">Cobertura en todo el departamento de Bolívar. Levantamientos topográficos georreferenciados en MAGNA-SIRGAS, deslindes, subdivisiones, replanteo y trámites ante el gestor catastral de su jurisdicción, las curadurías urbanas y el Registro de Instrumentos Públicos. Cotización gratuita en menos de 24h.</p>
-<div class="op-contact"><a class="tel" href="#contacto"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>Solicitar cotización</a></div>
-</div>
-</div>
 </section>
 <section>
 <h2>Municipios atendidos en Bolívar</h2>
@@ -189,11 +173,11 @@
 <input name="bot-field" type="hidden" /><input name="departamento" type="hidden" value="Bolívar"/><input name="slot" type="hidden" value="bolivar"/>
 <h3>Solicitar cotización</h3>
 <p class="sub">// departamento: Bolívar · respuesta &lt; 24h</p>
-<div class="field"><label>Nombre</label><input name="nome" type="text" placeholder="Tu nombre" required/></div>
-<div class="field"><label>Teléfono</label><input name="telefone" type="tel" placeholder="300 123 4567" required/></div>
-<div class="field"><label>Email</label><input name="email" type="email" placeholder="email@ejemplo.com.co" required/></div>
-<div class="field"><label>Tipo de trabajo</label><select name="tipo" required><option value="">¿Qué necesitas?</option><option value="Levantamiento topográfico">Levantamiento topográfico</option><option value="Deslinde de predios">Deslinde de predios</option><option value="Subdivisión de predios">Subdivisión de predios</option><option value="Replanteo topográfico">Replanteo topográfico</option><option value="Topografía con dron">Topografía con dron</option><option value="No sé">No sé</option><option value="Otro">Otro</option></select></div>
-<div class="field"><label>Área aproximada y finalidad</label><textarea name="descripcion" placeholder="Ej.: predio de 500 m² para licencia de construcción ante la curaduría..." rows="3" required></textarea></div>
+<div class="field"><label>Nombre</label><input aria-label="Nombre" name="nome" type="text" placeholder="Tu nombre" required/></div>
+<div class="field"><label>Teléfono</label><input aria-label="Teléfono" name="telefone" type="tel" placeholder="300 123 4567" required/></div>
+<div class="field"><label>Email</label><input aria-label="Email" name="email" type="email" placeholder="email@ejemplo.com.co" required/></div>
+<div class="field"><label>Tipo de trabajo</label><select aria-label="Tipo de trabajo" name="tipo" required><option value="">¿Qué necesitas?</option><option value="Levantamiento topográfico">Levantamiento topográfico</option><option value="Deslinde de predios">Deslinde de predios</option><option value="Subdivisión de predios">Subdivisión de predios</option><option value="Replanteo topográfico">Replanteo topográfico</option><option value="Topografía con dron">Topografía con dron</option><option value="No sé">No sé</option><option value="Otro">Otro</option></select></div>
+<div class="field"><label>Área aproximada y finalidad</label><textarea aria-label="Área aproximada y finalidad" name="descripcion" placeholder="Ej.: predio de 500 m² para licencia de construcción ante la curaduría..." rows="3" required></textarea></div>
 <button class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Enviar solicitud →</button>
 </form><script>(function(){var f=document.currentScript.previousElementSibling;if(!f||f.tagName!=="FORM")return;f.addEventListener("submit",function(){var b=f.querySelector("button");if(!b||b.dataset.enviando)return;b.dataset.enviando="1";setTimeout(function(){b.disabled=true;b.style.opacity=".6";b.style.cursor="default";b.textContent=b.dataset.enviandoTexto||"Enviando...";},0);});})();</script>
 <div class="side-info">
